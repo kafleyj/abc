@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=    <div class="nav">
+       
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="lol.html">Home</a></li>
+            <li><a href="service.html">Services</a>
+                <ul>
+                <li><a href="#">Consult With Doctor</a></li>
+                <li><a href="appointment.html">Online Appiontment</a></li>
+                <li><a href="#">Health Services</a></li>
+                <li><a href="#">Emergency Number/Ambulance</a></li>
+                
+            </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </div> 
+    <div class="bg-img">
+        <div class="content">
+          <img src="we.jpg" class="avatar">
+          <header>Patient's Login</header>
+          <form action="#">
+            <div class="field">
+              <span class="fa fa-user"></span>
+              <input type="text" required placeholder="Email or Phone">
+            </div>
+  <div class="field space">
+              <span class="fa fa-lock"></span>
+              <input type="password" class="pass-key" required placeholder="Password">
+              <span class="show">SHOW</span>
+            </div>
+  <div class="pass">
+              <a href="#">Forgot Password?</a>
+  </div>
+<div class="doc">
+    <a href="doctor.html">Doctors Login?</a>
+</div>
+
+  <div class="field">
+              <input type="submit" value="LOGIN">
+            </div>
+  </form>
+  <div class="login">
+  Or login with</div>
+  <div class="links">
+            <div class="facebook">
+              <i class="fab fa-facebook-f"><span>Facebook</span></i>
+            </div>
+  <div class="instagram">
+              <i class="fab fa-instagram"><span>Instagram</span></i>
+            </div>
+  </div>
+  <div class="signup">
+  Don't have account?
+            <a href="reister.html">Signup Now</a>
+          </div>
+  </div>
+  </div>
+  <script>
+        const pass_field = document.querySelector('.pass-key');
+        const showBtn = document.querySelector('.show');
+        showBtn.addEventListener('click', function(){
+         if(pass_field.type === "password"){
+           pass_field.type = "text";
+           showBtn.textContent = "HIDE";
+           showBtn.style.color = "#3498db";
+         }else{
+           pass_field.type = "password";
+           showBtn.textContent = "SHOW";
+           showBtn.style.color = "#222";
+         }
+        });
+      </script>
+      <footer><p>Copyright &copy;2020 Jeevan Kaphle</p></footer>  
+</body>
+</html>

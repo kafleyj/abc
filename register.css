@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+h1{
+    text-align: left;
+    padding: 20px;
+    color: blue;
+
+}
+.register{
+    background:blueviolet;
+    width: 500px;
+    margin: 0px 0px0px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#register{
+    margin-left: 50px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-style: italic;
+}
+body{
+background-image: url(11.jpg);
+background-size: cover;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Signup</title>
+</head>
+<body>
+    <div class="tg-dashboardboxtitle">
+        <h2>Please fill in the Basic information</h2>
+    </div>
+    <div class="tg-description">
+        <p>Please complete the following basic form. Once you complete modifying the form,
+            you can proceed to completing your profile.</p>
+
+    </div>
+</div>
+<div class="tg-dashboardbox" style="padding-top: 0px;margin-top: -15px;">
+    <div class="tg-dashboardboxtitle">
+        <h2>Doctor Information</h2>
+    </div>
+    <div class="tg-box tg-basicinformation">
+        <div class="row tg-rowmargin">
+
+            <div class="col-md-12 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup tg-nmc-number"><label for="DoctorNmcNumber">NMC Number</label><input name="data[Doctor][nmc_number]" class="form-control" placeholder="NMC Number" step="any" type="number" id="DoctorNmcNumber"/></div>                                        <div class="nmc-exists" style="display:none;">
+                    <div class="alert alert-warning" style="display:inline-table;">
+                    Your profile already exists at Hamro Doctor. Please follow the link to claim your profile.<a target="_blank" class="tg-btn tg-btn-theme">Claim Now</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup">
+                        <label for="DoctorSalutation">Salutation</label><select name="data[Doctor][salutation]" id="DoctorSalutation">
+<option value="Dr.">Dr.</option>
+<option value="Asso. Prof.">Asst. Prof.</option>
+<option value="Prof">Prof</option>
+<option value="Asst. Prof. Dr.">Asst. Prof. Dr.</option>
+<option value="Prof. Dr.">Prof. Dr.</option>
+<option value="Tech">Tech</option>
+<option value="Acu.">Acu.</option>
+<option value="Mr.">Mr.</option>
+<option value="Ms.">Ms.</option>
+<option value="Pt.">Pt.</option>
+</select>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 tg-columnpadding">
+                    <div class="form-group tg-formgroup"><label for="DoctorFirstName">First Name</label><input name="data[Doctor][first_name]" class="form-control" placeholder="First Name" required="required" maxlength="255" type="text" id="DoctorFirstName"/></div>                                    </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorLastName">Last Name</label><input name="data[Doctor][last_name]" class="form-control" placeholder="Last Name" required="required" maxlength="255" type="text" id="DoctorLastName"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorEmail">Email</label><input name="data[Doctor][email]" class="form-control" placeholder="Email" required="required" maxlength="255" type="email" id="DoctorEmail"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorPhone">Phone</label><input name="data[Doctor][phone]" class="form-control" placeholder="Phone" required="required" maxlength="255" type="tel" id="DoctorPhone"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorWebsite">Website</label><input name="data[Doctor][website]" class="form-control" placeholder="Website" maxlength="255" type="text" id="DoctorWebsite"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorYearsPracticed">Years Practiced</label><input name="data[Doctor][years_practiced]" class="form-control" placeholder="Years of Practice" type="number" id="DoctorYearsPracticed"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorSpeciality">Speciality</label><input name="data[Doctor][speciality]" class="form-control" placeholder="Speciality" required="required" maxlength="255" type="text" id="DoctorSpeciality"/></div>                                    </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorQualification">Qualification</label><input name="data[Doctor][qualification]" class="form-control" placeholder="Qualification" required="required" maxlength="255" type="text" id="DoctorQualification"/></div>                                    </div>
+
+
+
+            <div class="col-md-6 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorGender">Gender</label><select name="data[Doctor][gender]" class="form-control" placeholder="NMC Number" required="required" id="DoctorGender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Others">Others</option>
+</select></div>                                    </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 tg-columnpadding">
+                <div class="form-group tg-formgroup"><label for="DoctorDescription">Description</label><textarea name="data[Doctor][description]" class="form-control ckeditor" placeholder="Your Biography" required="required" cols="30" rows="6" id="DoctorDescription"></textarea></div>                                    </div>
+        </div>
+    </div>
+    <div class="tg-dashboardbox">
+        <div class="tg-dashboardboxtitle">
+            <h2>Display Photo</h2>
+        </div>
+        <div class="tg-box tg-profilephoto">
+            <div class="row tg-rowmargin">
+                <div class="col-md-12 col-sm-8 col-xs-8 tg-columnpadding">
+                    <div class="form-group tg-formgroup"><label for="DoctorImage"></label><input type="file" name="data[Doctor][image]"  class="form-control" id="DoctorImage"/></div>                                        </div>
+            </div>
+        </div>
+
+        <div class="tg-dashboardboxtitle">
+            <h2>Medical Council Document (Optional)</h2>
+            <h4>For the proof and verification purpose. Mandotary for foreign doctors.</h4>
+        </div>
+        <div class="tg-box tg-profilephoto">
+            <div class="row tg-rowmargin">
+                <div class="col-md-12 col-sm-8 col-xs-8 tg-columnpadding">
+                    <div class="form-group tg-formgroup"><label for="DoctorMedicalCouncilDocument"></label><input type="file" name="data[Doctor][medical_council_document]"  class="form-control" id="DoctorMedicalCouncilDocument"/></div>                                        </div>
+            </div>
+        </div>
+
+        
+</div>
+<div class="tg-updateall"> <span class="tg-note">* Click <strong>Update all changes</strong> To Update Latest Added Detail (s).</span><br>
+    <button class="tg-btn" type="submit">Submitt</button>
+</div>
+</form>                    </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+</body>
+</html>
