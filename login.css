@@ -241,9 +241,36 @@ i span{
   left: calc(50% - 50px);
 }
 footer{
+  width: 100%;
+  float: left;
+  color: white;
+padding: 30px 0;
+background: black;
+}
+
+footer .footer-box{
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+footer .footer-box a{
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+footer .footer-box a:hover{
+  text-decoration: none;
+  color: red;
+}
+footer p{
   clear: both;
-  background-color: #000033;
+  background-color:brown;
   padding: 10px;
   text-align: center;
   color: white;
 }
+
+
+

@@ -9,15 +9,9 @@
 <body>
     <div class="nav">
         <ul>
-            <li><a href="lol.html">Home</a></li>
+          <li><a href="lol.html">VIRTUAL HOSPITAL</a></li>
             <li><a href="service.html">Services</a>
-                <ul>
-                <li><a href="#">Consult With Doctor</a></li>
-                <li><a href="appointment.html">Online Appiontment</a></li>
-                <li><a href="#">Health Pakcages</a></li>
-                <li><a href="#">Emergency Number/Ambulance</a></li>
-                
-            </ul>
+               
             </li>
 
             <li><a href="gallery.html">Gallery</a></li>
@@ -26,33 +20,73 @@
         </ul>
         
     </div> 
-    <input type="checkbox" id="click">
-    <label for="click">
-      <i class="fab fa-facebook-messenger"></i>
-      <i class="fas fa-times"></i>
-    </label>
-    <div class="wrapper">
-      <div class="head-text">
-Let's chat? - Online</div>
-<div class="chat-box">
-        <div class="desc-text">
-Please fill out the form below to start chatting with the next available agent.</div>
-<form action="#">
-          <div class="field">
-            <input type="text" placeholder="Your Name" required>
-          </div>
-<div class="field">
-            <input type="email" placeholder="Email Address" required>
-          </div>
-<div class="field textarea">
-            <!-- Due to more textarea fields I got an error so I've changed the textarea name into changeit..Change the tag name to use it -->
-            <changeit cols="30" rows="10" placeholder="Explain your queries.." required></changeit>
-          </div>
-<div class="field">
-            <button type="submit">Start Chat</button>
-          </div>
-</form>
-</div>
-</div>
+    <h2 >Contact Form</h2>
+    <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="nepal">Nepal</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write Your message.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <section>
+    <h2>OUR TEAM</h2>
+    <img src="jk1.JPG" width="25%">
+    <p>Name:Jeevan Kaphle<br>Contact:+9779843434146</p>
+  </section>
+
+
+
+
+
+    
+<footer>
+  <div class="w-80">
+      <div class="footer-box">
+          <h2><a href="service.html">Services</h2></a>
+              <a href="#">Daily Monitoring</a>
+              <a href="#">Meet Renowed Doctors</a>
+              <a href="#">Virtual Prescription</a>
+              <a href="#">Upadate Patient Record</a>
+              <a href="#">Notification for Patients</a>
+      </div>
+      <div class="footer-box">
+          <h2><a href="#">About Us</a></h2>
+          <a href="#">Virtual hospital</a>
+          <a href="#">Our Team</a>
+          <a href="#">Management</a>
+          <a href="#">Carrers</a>
+      </div>
+      <div class="footer-box">
+          <h2><a href="contact.html">Contact US</h2></a>
+          <a href="#">Post a Query</a>
+          <a href="#">Search Nearby Hospitals</a>
+          <a href="#">Emergency Numbers List</a>
+          <a href="#">Ask Question</a>
+      </div>
+      <div class="footer-box">
+          <h2><a href="#">Facilities</a></h2>
+          <a href="#">Daily Monitoring</a>
+          <a href="#">patient Dashboard</a>
+          <a href="#">Doctor Dashboar</a>
+          <a href="#">Patient-doctor Interaction</a>
+      </div>
+      <p>Copyright &copy;2020 Jeevan Kaphle</p>
+  </div>
 </body>
 </html>
